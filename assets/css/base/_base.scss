@@ -1,0 +1,28 @@
+body {
+	background-color:$primary-background-color;
+	font-size:$font-size-small;
+	line-height: $base-line-height;
+
+}
+.header-top {
+	width:100%;
+	text-align: center;
+	
+}
+.topimg{
+	display:inline-flex;
+	margin:0 auto;
+
+}
+.container  {
+	max-width: 1024px;
+	margin: 0 auto;
+
+}
+.main{
+	padding-left:2%;
+	padding-right:2%;
+}
+.frontpage-header{
+	text-align: center;
+}

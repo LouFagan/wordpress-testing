@@ -1,0 +1,14 @@
+body{background-color:#ffeadd;font-size:1rem;line-height:1.5}
+.header-top{width:100%;text-align:center}
+.topimg{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;margin:0 auto}
+.container{max-width:1024px;margin:0 auto}
+.main{padding-left:2%;padding-right:2%}
+.frontpage-header{text-align:center}
+.nav-link,.navbar-brand{font-size:1rem;color:#000 !important;text-decoration:none}
+.nav-link:hover,.navbar-brand:hover{color:#c89f9c !important}
+li.current-menu-item a{color:#b36a5e !important}
+.topnav{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;background-color:transparent;top:0;padding-top:3%;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.topnav ul{display:-webkit-box;display:-ms-flexbox;display:flex;list-style-type:none}
+.topnav ul li{font-size:1rem}
+.topnav ul li a{color:#000;text-decoration:none;padding:.5rem}
+.topnav ul li a:hover{color:#c89f9c}
