@@ -1,46 +1,55 @@
+.navbar {
+	background: $accent1;	   
+}
+
+.nav-link,.navbar-brand {
+  color: $white !important;
+  cursor: pointer;
+
+}
+
+.nav-link {
+  margin-right: 1em !important;  
+}
+
 .nav-link, .navbar-brand  {
 	
-	font-size: $font-size-small;
-	color: $black !important;
+	font-size: $font-size-small;	
 	text-decoration:none;
 
+
 	&:hover{
-		color: $secondary !important;
+		color: $black !important;
 	}	
 
 }
 
 li.current-menu-item a  {
-	color: $accent1 !important;
+	color: $darkgrey !important;
 }
 
-.topnav  {
-		display: flex;	
-		
-		width: 100%;
-		background-color: transparent;
-		top:0;
-		padding-top:3%;
-		justify-content: center;
+.navbar-collapse {
+  justify-content: flex-end;
+}
 
-	ul  {
-			display: flex;
+
+
+.topnav ul {	
+			padding-top: 1rem;
 			list-style-type: none;
+
 			
 				li {
 						font-size: $font-size-small;
-						
-
 
 							a {
 									color: $black;
 									text-decoration:none;
-									padding:.5rem;
+									
 								&:hover{
 								color: $secondary;
 								
-				}
-
+				
 			}
 		}
 	}

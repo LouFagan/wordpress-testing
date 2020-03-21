@@ -4,25 +4,149 @@ body {
 	line-height: $base-line-height;
 
 }
-.header-top {
+
+.container-fluid {
+    padding: 0!important;
+}
+
+.header {
+	height:100vh;
+	min-height:500px;
+  background-image: url('assets/images/background-brick.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: $primary;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+
+.description h1 {
+  color: $secondary;
+}
+
+.description p {
+  color: $white; 
+}
+
+.description button {
+  border:1px solid $accent1;
+  background:$accent1;
+  border-radius: 0;
+  color:$white;
+
+	&:hover {
+	  border:1px solid $white;
+	  background:$white;
+	  color:$black;
+	}
+}
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+    border-radius: 0;
+}
+
+.features .btn {
+  background-color: $accent1;
+  border: 1px solid $accent1;
+  color: $white;
+  margin-top: 20px;
+
+		&:hover {
+ 		 background-color: $secondary;
+  		border: 1px solid $secondary;
+	}
+}
+
+.page-footer {
+  background-color: $footer-color;
+  color: $darkgrey;
+  padding: 60px 0 30px;
+}
+
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+@media (max-width: 575.98px) {
+
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 28%;
+    transform: none;
+    text-align: center;
+  }
+  
+  .description h1 {
+    font-size: 2em;
+  }
+  
+  .description p {
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    margin: 0;
+  }
+
+}
+/*.header-top {
 	width:100%;
 	text-align: center;
 	
-}
-.topimg{
+}*/
+/*.topimg{
 	display:inline-flex;
 	margin:0 auto;
+}*/
 
-}
-.container  {
+/*.container  {
 	max-width: 1024px;
 	margin: 0 auto;
+}*/
 
-}
-.main{
+/*.main{
 	padding-left:2%;
 	padding-right:2%;
-}
-.frontpage-header{
-	text-align: center;
-}
+}*/
+

@@ -1,14 +1,33 @@
 body{background-color:#ffeadd;font-size:1rem;line-height:1.5}
-.header-top{width:100%;text-align:center}
-.topimg{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;margin:0 auto}
-.container{max-width:1024px;margin:0 auto}
-.main{padding-left:2%;padding-right:2%}
-.frontpage-header{text-align:center}
-.nav-link,.navbar-brand{font-size:1rem;color:#000 !important;text-decoration:none}
-.nav-link:hover,.navbar-brand:hover{color:#c89f9c !important}
-li.current-menu-item a{color:#b36a5e !important}
-.topnav{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;background-color:transparent;top:0;padding-top:3%;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.topnav ul{display:-webkit-box;display:-ms-flexbox;display:flex;list-style-type:none}
+.container-fluid{padding:0 !important}
+.header{height:100vh;min-height:500px;background-image:url("assets/images/background-brick.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;position:relative;background-color:#eed7c5}
+.overlay{position:absolute;min-height:100%;min-width:100%;left:0;top:0;background:rgba(0,0,0,0.6)}
+.description{left:50%;position:absolute;top:45%;-webkit-transform:translate(-50%,-55%);transform:translate(-50%,-55%);text-align:center}
+.description h1{color:#c89f9c}
+.description p{color:#fff}
+.description button{border:1px solid #b36a5e;background:#b36a5e;border-radius:0;color:#fff}
+.description button:hover{border:1px solid #fff;background:#fff;color:#000}
+.features{margin:4em auto;padding:1em;position:relative}
+.feature-title{color:#333;font-size:1.3rem;font-weight:700;margin-bottom:20px;text-transform:uppercase}
+.features img{-webkit-box-shadow:1px 1px 4px rgba(0,0,0,0.4);box-shadow:1px 1px 4px rgba(0,0,0,0.4);margin-bottom:16px}
+.features .form-control,.features input{border-radius:0}
+.features .btn{background-color:#b36a5e;border:1px solid #b36a5e;color:#fff;margin-top:20px}
+.features .btn:hover{background-color:#c89f9c;border:1px solid #c89f9c}
+.page-footer{background-color:#222;color:#ccc;padding:60px 0 30px}
+.footer-copyright{color:#666;padding:40px 0}
+.navbar{background:#b36a5e}
+.nav-link,.navbar-brand{color:#fff !important;cursor:pointer}
+.nav-link{margin-right:1em !important}
+.nav-link,.navbar-brand{font-size:1rem;text-decoration:none}
+.nav-link:hover,.navbar-brand:hover{color:#000 !important}
+li.current-menu-item a{color:#ccc !important}
+.navbar-collapse{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+.topnav ul{padding-top:1rem;list-style-type:none}
 .topnav ul li{font-size:1rem}
-.topnav ul li a{color:#000;text-decoration:none;padding:.5rem}
+.topnav ul li a{color:#000;text-decoration:none}
 .topnav ul li a:hover{color:#c89f9c}
+@media(max-width:575.98px){.description{left:0;padding:0 15px;position:absolute;top:28%;-webkit-transform:none;transform:none;text-align:center}
+.description h1{font-size:2em}
+.description p{font-size:1.2rem}
+.features{margin:0}
+}
