@@ -6,6 +6,13 @@ body {
 	margin:0;
 }
 
+.fa,.fas,.far,.fal,.fab {
+  font-family: "Font Awesome 5 Free";
+}
+.container-popover {padding:20px;}
+.form-control {width:120px;}
+.popover {max-width:400px;}
+
 .container-fluid {
     padding: 0!important;
 }
@@ -60,10 +67,6 @@ font-size:$font-size-small;
 	}
 }
 
-.carousel-inner > .item > img{
-margin:auto;
-width:100%
-}
 .features {
   margin: 4em auto;
   padding: 1em;
