@@ -9,12 +9,20 @@ body {
 .fa,.fas,.far,.fal,.fab {
   font-family: "Font Awesome 5 Free";
 }
-.container-popover {padding:20px;}
+
+.popover-div {padding:20px;}
 .form-control {width:120px;}
 .popover {max-width:400px;}
 
 .container-fluid {
     padding: 0!important;
+}
+
+ .tab-content {
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .header {

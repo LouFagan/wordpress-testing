@@ -1,9 +1,10 @@
 body{background-color:#fff;font-size:1em;line-height:1.5;height:100%;margin:0}
 .fa,.fas,.far,.fal,.fab{font-family:"Font Awesome 5 Free"}
-.container-popover{padding:20px}
+.popover-div{padding:20px}
 .form-control{width:120px}
 .popover{max-width:400px}
 .container-fluid{padding:0 !important}
+.tab-content{max-height:300px;margin-bottom:10px;overflow:scroll;-webkit-overflow-scrolling:touch}
 .header{height:50%;min-height:500px;position:relative;background-color:#d3bcc0}
 .overlay{position:absolute;min-height:100%;min-width:100%;left:0;top:0;background:rgba(0,0,0,0.6);z-index:-1}
 .description{text-align:center}
