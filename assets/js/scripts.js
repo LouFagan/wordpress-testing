@@ -4,11 +4,10 @@ var $j = jQuery.noConflict();
 
 $j(function () {
   $j('[data-toggle="popover"]').popover()
-  html:true,
-  sanitize:false,
+  html:true
 });
 
-/*$j('#html-div').popover({
+$j('#html-div').popover({
 	title: '',
 	trigger: 'focus',
 	html: true,
@@ -16,8 +15,9 @@ $j(function () {
 		return $j('#html-div').html();
 		
 	} 
-});*/
-$j('#[data-toggle="popover"]').popover({
+});
+
+/*$j('#[data-toggle="popover"]').popover({
 	title: '',
 	trigger: 'focus',
 	html: true,
@@ -26,7 +26,7 @@ $j('#[data-toggle="popover"]').popover({
 		return $j(content).find("#html-div").clone();
 		
 	} 
-});
+});*/
 
  $j('#pop-content').popover({
  	placement:'bottom',
@@ -37,6 +37,10 @@ $j('#[data-toggle="popover"]').popover({
           return $j('#pop-content').html();
         }
 });
+
+ $j('.toast').toast('show');
+
+
 
 /* $('[data-toggle="popover"]').popover({
     html: true,

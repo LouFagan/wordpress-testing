@@ -3,7 +3,7 @@ body {
 	font-size:$font-size-small;
 	line-height: $base-line-height;
 	height:100%;
-	margin:0;
+	margin:0; 
 }
 
 .fa,.fas,.far,.fal,.fab {
@@ -124,7 +124,26 @@ font-size:$font-size-small;
   padding: 40px 0;
 }
 
+.breadcrumb {
+  background-color:transparent;
+}
+.entry{
+  background-color:$secondary; 
+}
+.post_image{
+  float:left;
 
+
+}
+.entry-content{
+  float:right;
+}
+ .img-thumbnail{
+  border:none;
+ }
+ .my-card{
+  border:none;
+ }
 /*
 ####################################################
 M E D I A  Q U E R I E S
