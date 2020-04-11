@@ -6,15 +6,17 @@
 <?php //the_title(); ?></a></h2>
 <small><?php //the_time('F jS, Y') ?> - by <?php //the_author() ?> --><!--</small>-->
 
- <div class="card my-card mb-4 pl-3">
+ <div class="row">
 	<?php
    if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
     <!--<div class="entry mt-2 p-5">
 		<?php //the_content();?>   
     </div>-->
 
-<div id="post-<?php the_ID(); ?>"<?php post_class(); ?>></div>
-
+<div class="col-md-12 d-flex justify-content-center" id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+  <h2 class="entry-title pb-3"><?php the_title(); ?></h2>
+</div><!--end of div-->
+  </div><!--end of row-->
  <?php 
 
    if( has_post_thumbnail() )
@@ -22,27 +24,34 @@
   ?>   
 
  
- 
-  <div class="card-body img-thumbnail post_image">
-       <?php the_post_thumbnail('smallest'); ?> 
-       <h2 class="entry-title"><?php the_title(); ?></h2>
+ <div class="row">
+  <div class="col-md-12 d-flex justify-content-center pb-5 img-responsive post_image">
+       <?php the_post_thumbnail('largest'); ?> 
+     </div>
+  <div class="col-md-12">
         <?php the_content(); ?>
-      </div>
+        </div><!--end of div-->
+      </div><!--end of row-->
    
    
 <?php } 
  else{ ?>
-<div class="card-body">
-    <h2 class="entry-title"><?php the_title(); ?></h2>
-      <div class="entry-content">
+<!--<div class="col-md-12 d-flex justify-content-center">
+    <h2 class="entry-title text-center pb-3"><?php //the_title(); ?></h2>
+  </div>--><!--end of div
+  </div>--><!--end of row-->
+  <div class="row">
+      <div class=" col-12 entry-content">
     <?php the_content(); ?>
-</div>
-</div>
+</div><!--end of div-->
+
    <?php } ?>
     
  
 	<?php endwhile; endif;?>
-</div><!--end of row-->
+  </div><!--end of row-->
+  
+
  </div> <!--end of container -->
 
 

@@ -22,10 +22,6 @@ body{background-color:#fff;font-size:1em;line-height:1.5;height:100%;margin:0}
 .footer-copyright{color:#666;padding:40px 0}
 .breadcrumb{background-color:transparent}
 .entry{background-color:#d3bcc0}
-.post_image{float:left}
-.entry-content{float:right}
-.img-thumbnail{border:0}
-.my-card{border:0}
 .navbar{background:#69306d}
 .nav-link,.navbar-brand{color:#fff !important;cursor:pointer}
 .nav-link{margin-right:1em !important}
